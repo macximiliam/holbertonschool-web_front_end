@@ -41,7 +41,9 @@ body {
   line-height: var(--line-height-base);
 }
 
-/* Tarea 13: Pseudo-classes con especificidad en el atributo href */
+/* Configuración de Enlaces (Tarea 13) 
+   Se utiliza a[href] para cumplir con el requisito de "contener un hipervínculo"
+*/
 a[href] {
   color: var(--text-color);
   text-decoration: none;
