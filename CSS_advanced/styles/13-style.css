@@ -41,7 +41,8 @@ body {
   line-height: var(--line-height-base);
 }
 
-a[href]:link {
+/* Task 13 */
+a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
