@@ -79,12 +79,12 @@ body {
 }
 
 /* Links */
-a {
+a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
 
-a[href]:visited {
+a:visited {
   font-style: italic;
 }
 
