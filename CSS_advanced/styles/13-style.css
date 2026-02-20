@@ -41,20 +41,23 @@ body {
   line-height: var(--line-height-base);
 }
 
-a[href]:link {
+a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
 
-a:visited {
+/* 1. Directly after: Target the visited state */
+a[href]:visited {
   font-style: italic;
 }
 
-a:hover {
+/* 2. Directly after: Target the hover state */
+a[href]:hover {
   text-decoration: underline;
 }
 
-a:active {
+/* 3. Directly after: Target the active state */
+a[href]:active {
   background-color: var(--color-light-grey);
 }
 
