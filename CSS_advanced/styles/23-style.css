@@ -1,5 +1,3 @@
-/* Normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -165,6 +163,23 @@ a:active {
   margin: var(--section-tagline-margin);
 }
 
+/* Card Services (Tarea 24) */
+.card-services .card-title {
+  margin: 0;
+}
+
+.card-services a {
+  display: block;
+  padding: 2rem;
+  background-color: var(--color-light-grey);
+}
+
+.card-services a:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  text-decoration: none;
+}
+
 /* Grid */
 ul.row {
   margin: 0;
@@ -220,19 +235,19 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
 }
 
-/* Dark theme (Tarea 23) */
+/* Dark theme */
 [data-section-theme="dark"] {
   --text-color: var(--color-white);
   --section-title-color: var(--color-white);
   background-color: var(--color-black);
 }
 
-/* Footer address (Tarea 23) */
+/* Footer address */
 .footer-address {
   color: var(--text-color);
 }
 
-/* Social links (Tarea 23) */
+/* Social links */
 .social-link {
   display: block;
 }
