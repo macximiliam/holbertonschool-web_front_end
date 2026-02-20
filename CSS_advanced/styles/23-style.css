@@ -79,9 +79,13 @@ body {
 }
 
 /* Links */
-a[href] {
+a {
   color: var(--text-color);
   text-decoration: none;
+}
+
+a[href] {
+  color: var(--text-color);
 }
 
 a:visited {
@@ -211,29 +215,24 @@ ul.row {
 }
 
 /* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
 }
 
-/* Dark theme */
+/* Dark theme (Tarea 23) */
 [data-section-theme="dark"] {
   --text-color: var(--color-white);
   --section-title-color: var(--color-white);
   background-color: var(--color-black);
 }
 
-/* Footer address */
+/* Footer address (Tarea 23) */
 .footer-address {
   color: var(--text-color);
 }
 
-/* Social links */
+/* Social links (Tarea 23) */
 .social-link {
   display: block;
 }
