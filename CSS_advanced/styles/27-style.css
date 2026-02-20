@@ -165,6 +165,13 @@ a:active {
   text-align: var(--section-header-align);
 }
 
+.section-hero {
+  background-size: 90rem auto;
+}
+
+.section-hero .section-title {
+  margin-bottom: 5rem;
+}
 .section-body {
   padding: var(--section-body-padding);
 }
