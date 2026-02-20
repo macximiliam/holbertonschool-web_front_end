@@ -1,3 +1,4 @@
+/* Root variables */
 :root {
   --color-primary: #d73953;
   --color-black: #090909;
@@ -25,10 +26,12 @@
   --section-header-align: center;
   --section-tagline-transform: uppercase;
 
+  /* Custom properties (Task 12) */
   --section-title-margin: 0;
   --section-title-color: var(--color-black);
 }
 
+/* Base styles */
 html {
   font-size: 62.5%;
 }
@@ -41,15 +44,17 @@ body {
   line-height: var(--line-height-base);
 }
 
-a[href] {
+a {
   color: var(--text-color);
   text-decoration: none;
 }
 
+/* Section styling */
 .section-header {
   text-align: var(--section-header-align);
 }
 
+/* New declaration for section-title (Task 12) */
 .section-title {
   font-family: var(--font-family-title);
   font-size: var(--font-size-xx-large);
@@ -65,10 +70,12 @@ a[href] {
   font-weight: var(--font-weight-bold);
 }
 
+/* Components */
 .card-category {
   color: var(--color-primary);
 }
 
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
