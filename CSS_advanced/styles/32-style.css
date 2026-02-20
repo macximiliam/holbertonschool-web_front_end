@@ -79,7 +79,7 @@ body {
   --header-logo-link-top: -1rem;
   --header-logo-link-left: 0;
 
-  /* Transition Variables (Task 32) */
+  /* Custom Transition Properties (Task 32) */
   --transition-duration: .3s;
   --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
@@ -149,7 +149,7 @@ a:active {
   color: var(--button-hover-color);
   text-decoration: var(--button-hover-text-decoration);
   background-color: var(--button-hover-background);
-  /* Transitions for Button (Task 32) */
+  /* Button transitions (Task 32) */
   transition-duration: var(--transition-duration);
   transition-property: color, background-color;
 }
@@ -193,7 +193,7 @@ a:active {
   background-color: var(--color-white);
   width: 0;
   height: 0.2rem;
-  /* Navbar Animation */
+  /* Shorthand transition (Task 32) */
   transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
@@ -250,6 +250,23 @@ a:active {
   margin: var(--section-tagline-margin);
 }
 
+/* Card Services */
+.card-services .card-title {
+  margin: 0;
+}
+
+.card-services a {
+  display: block;
+  padding: 2rem;
+  background-color: var(--color-light-grey);
+}
+
+.card-services a:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  text-decoration: none;
+}
+
 /* Card Work */
 .card-work .card-outer {
   position: relative;
@@ -257,6 +274,7 @@ a:active {
 }
 
 .card-work:hover .card-outer {
+  /* Scale transform */
   transform: scale(0.95);
 }
 
@@ -268,6 +286,7 @@ a:active {
 }
 
 .card-work:hover .card-image img {
+  /* Scale and transition for image */
   transform: scale(1.2);
   transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
@@ -278,6 +297,7 @@ a:active {
   left: -0.1rem;
   right: -0.1rem;
   z-index: 1;
+  /* Shorthand transition for overlay */
   transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
